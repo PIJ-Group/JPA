@@ -21,19 +21,19 @@ public class Pruebas {
 
 		EntityManager em = null;
 		Autor a1 = new Autor(null, "H.P.", "Lovecraft");
-		a1.setFechaNacimiento(new Date());
+		a1.setFechaNacimiento(new Date(1890-8-20));
 		Autor a2 = new Autor(null, "Stephen", "King");
-		a2.setFechaNacimiento(new Date());
+		a2.setFechaNacimiento(new Date(1947-9-21));
 		Autor a3 = new Autor(null, "Anne", "Rice");
-		a3.setFechaNacimiento(new Date());
+		a3.setFechaNacimiento(new Date(1941-10-4));
 		Autor a4 = new Autor(null, "Richard", "Matheson");
-		a4.setFechaNacimiento(new Date());
+		a4.setFechaNacimiento(new Date(1926-2-20));
 		Autor a5 = new Autor(null, "Bram", "Stoker");
-		a5.setFechaNacimiento(new Date());
+		a5.setFechaNacimiento(new Date(1847-11-8));
 		Autor a6 = new Autor(null, "Adam", "L.G.N");
-		a6.setFechaNacimiento(new Date());
+		a6.setFechaNacimiento(new Date(1969-4-19));
 		Autor a7 = new Autor(null, "Jack", "Ketchum");
-		a7.setFechaNacimiento(new Date());
+		a7.setFechaNacimiento(new Date(1946-11-10));
 
 		Editorial e1 = new Editorial(null, "Planeta", null);
 		Editorial e2 = new Editorial(null, "Anaya", null);
