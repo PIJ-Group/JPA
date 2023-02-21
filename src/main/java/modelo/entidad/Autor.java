@@ -1,11 +1,16 @@
 package modelo.entidad;
 
 import java.util.Date;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -26,7 +31,8 @@ public class Autor {
 	@Embedded
 	private Direccion direccion;
 	
-	
+	@OneToMany(mappedBy = "autor", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private List<Libro> librosAutor;
 	
 	public Autor() {
 		super();
@@ -37,7 +43,6 @@ public class Autor {
 		this.id = id;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
-		
 	}
 
 	public Integer getId() {
@@ -80,15 +85,11 @@ public class Autor {
 		this.direccion = direccion;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Autor [id=" + id + ", nombre=" + nombre + ", apellidos=" + apellidos + ", fechaNacimiento="
-				+ fechaNacimiento + "]";
+				+ fechaNacimiento + ", direccion=" + direccion + ", libros=" + librosAutor + "]";
 	}
-	
-	
-	
 	
 }
 

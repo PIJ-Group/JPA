@@ -5,7 +5,6 @@ import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -26,8 +25,8 @@ public class Libro {
 	@JoinColumn(name="FK_EDITORIAL", referencedColumnName="id")
 	private Editorial editorial;
 	
-	@JoinColumn(name = "FK_AUTOR", nullable = false)
-    @ManyToOne(optional = false, cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "FK_AUTOR", referencedColumnName = "id")
 	private Autor autor;
 	
 	@ManyToMany(cascade=CascadeType.PERSIST)
