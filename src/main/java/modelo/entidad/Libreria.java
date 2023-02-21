@@ -12,7 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 @Entity
 public class Libreria {
-	// Un libro puede estar en diferentes librerías one to many.
+	// Un libro puede estar en diferentes librerías y varias librerías pueden almacenar varios libros.
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
