@@ -16,24 +16,25 @@ import modelo.entidad.Libro;
 
 public class Pruebas {
 
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("pruebaJPA");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("PruebaJPA");
 
 		EntityManager em = null;
 		Autor a1 = new Autor(null, "H.P.", "Lovecraft");
-		a1.setFechaNacimiento(new Date(1890-8-20));
+		a1.setFechaNacimiento(new Date(-10,7,20));
 		Autor a2 = new Autor(null, "Stephen", "King");
-		a2.setFechaNacimiento(new Date(1947-9-21));
+		a2.setFechaNacimiento(new Date(47,8,21));
 		Autor a3 = new Autor(null, "Anne", "Rice");
-		a3.setFechaNacimiento(new Date(1941-10-4));
+		a3.setFechaNacimiento(new Date(41,19,4));
 		Autor a4 = new Autor(null, "Richard", "Matheson");
-		a4.setFechaNacimiento(new Date(1926-2-20));
+		a4.setFechaNacimiento(new Date(26,1,20));
 		Autor a5 = new Autor(null, "Bram", "Stoker");
-		a5.setFechaNacimiento(new Date(1847-11-8));
+		a5.setFechaNacimiento(new Date(-53,10,8));
 		Autor a6 = new Autor(null, "Adam", "L.G.N");
-		a6.setFechaNacimiento(new Date(1969-4-19));
+		a6.setFechaNacimiento(new Date(69,3,19));
 		Autor a7 = new Autor(null, "Jack", "Ketchum");
-		a7.setFechaNacimiento(new Date(1946-11-10));
+		a7.setFechaNacimiento(new Date(46,10,10));
 
 		Editorial e1 = new Editorial(null, "Planeta", null);
 		Editorial e2 = new Editorial(null, "Anaya", null);
@@ -49,6 +50,7 @@ public class Pruebas {
 		Libro lib6 = new Libro(null, "Entrevista con el Vampiro", 12.6, e2, a3);
 		Libro lib7 = new Libro(null, "La chica de al lado", 11.6, e2, a7);
 		Libro lib8 = new Libro(null, "Misery", 10.4, e2, a2);
+		Libro lib9 = new Libro(null, "La llamada de Cthulhu", 19.99, e2,a1);
 		librosEditorial1.add(lib1);
 		librosEditorial1.add(lib2);
 		librosEditorial1.add(lib3);
@@ -57,6 +59,7 @@ public class Pruebas {
 		librosEditorial2.add(lib6);
 		librosEditorial2.add(lib7);
 		librosEditorial2.add(lib8);
+		librosEditorial2.add(lib9);
 
 		e1.setLibrosEditorial(librosEditorial1);
 		e2.setLibrosEditorial(librosEditorial2);

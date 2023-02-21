@@ -3,7 +3,11 @@
 	<persistence-unit name="PruebaJPA" transaction-type="RESOURCE_LOCAL">
 		<!-- Aqui pondemos todas las clases que queremos que JPA vaya a leer las anotaciones
 		para poder mapearlas a la BBDD -->
-		<class>modelo.entidad.Persona</class>
+		<class>modelo.entidad.Autor</class>
+		<class>modelo.entidad.Direccion</class>
+		<class>modelo.entidad.Editorial</class>
+		<class>modelo.entidad.Libreria</class>
+		<class>modelo.entidad.Libro</class>
 		<properties>
 			<!-- Tenemos una seríe de parametros minimos que decirle a JPA para que se pueda
 			contectar a la BBDD -->
