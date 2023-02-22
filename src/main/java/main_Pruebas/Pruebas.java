@@ -10,8 +10,6 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
-
-
 import modelo.entidad.Autor;
 import modelo.entidad.Direccion;
 import modelo.entidad.Editorial;
@@ -44,6 +42,15 @@ public class Pruebas {
 		Editorial e2 = new Editorial(null, "Anaya", null);
 		List<Libro> librosEditorial1 = new ArrayList<Libro>();
 		List<Libro> librosEditorial2 = new ArrayList<Libro>();
+		
+		List<Libro>listaAutor1 = new ArrayList<>();
+		List<Libro>listaAutor2 = new ArrayList<>();
+		List<Libro>listaAutor3 = new ArrayList<>();
+		List<Libro>listaAutor4 = new ArrayList<>();
+		List<Libro>listaAutor5 = new ArrayList<>();
+		List<Libro>listaAutor6 = new ArrayList<>();
+		List<Libro>listaAutor7 = new ArrayList<>();
+		
 
 		List<Libro> listaAutor1 = new ArrayList<>();
 		List<Libro> listaAutor2 = new ArrayList<>();
@@ -72,6 +79,17 @@ public class Pruebas {
 		librosEditorial2.add(lib7);
 		librosEditorial2.add(lib8);
 		librosEditorial2.add(lib9);
+		
+		listaAutor1.add(lib9);
+		listaAutor2.add(lib1);
+		listaAutor2.add(lib3);
+		listaAutor2.add(lib8);
+		listaAutor3.add(lib6);
+		listaAutor4.add(lib5);
+		listaAutor5.add(lib2);
+		listaAutor6.add(lib4);
+		listaAutor7.add(lib8);
+		
 
 		listaAutor1.add(lib9);
 		listaAutor2.add(lib1);
@@ -85,6 +103,8 @@ public class Pruebas {
 
 		e1.setLibrosEditorial(librosEditorial1);
 		e2.setLibrosEditorial(librosEditorial2);
+		
+		
 
 		// Creamos las Librerias
 		Libreria libreria1 = new Libreria(null, "Libreria Madrid", "Pancracio", null);
@@ -159,6 +179,7 @@ public class Pruebas {
 
 		em.getTransaction().commit();
 		em.close();
+
 
 		System.out.println("==============================================");
 		em = emf.createEntityManager();
