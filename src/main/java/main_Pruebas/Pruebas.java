@@ -52,14 +52,6 @@ public class Pruebas {
 		List<Libro>listaAutor7 = new ArrayList<>();
 		
 
-		List<Libro> listaAutor1 = new ArrayList<>();
-		List<Libro> listaAutor2 = new ArrayList<>();
-		List<Libro> listaAutor3 = new ArrayList<>();
-		List<Libro> listaAutor4 = new ArrayList<>();
-		List<Libro> listaAutor5 = new ArrayList<>();
-		List<Libro> listaAutor6 = new ArrayList<>();
-		List<Libro> listaAutor7 = new ArrayList<>();
-
 		// Creamos todos los libros para las pruebas específicas
 		Libro lib1 = new Libro(null, "It", 5.6, e1, a2);
 		Libro lib2 = new Libro(null, "Drácula", 9, e1, a5);
@@ -90,16 +82,6 @@ public class Pruebas {
 		listaAutor6.add(lib4);
 		listaAutor7.add(lib8);
 		
-
-		listaAutor1.add(lib9);
-		listaAutor2.add(lib1);
-		listaAutor2.add(lib3);
-		listaAutor2.add(lib8);
-		listaAutor3.add(lib6);
-		listaAutor4.add(lib5);
-		listaAutor5.add(lib2);
-		listaAutor6.add(lib4);
-		listaAutor7.add(lib8);
 
 		e1.setLibrosEditorial(librosEditorial1);
 		e2.setLibrosEditorial(librosEditorial2);
