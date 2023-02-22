@@ -176,7 +176,7 @@ public class Pruebas {
 		}
 		System.out.println("==============================================");
 
-		query = em.createQuery("SELECT lib.autor.nombre, lib.autor.apellidos, lib.titulo " + "FROM Libro lib");
+		query = em.createQuery("SELECT a.nombre, a.apellidos, l.titulo FROM Autor a JOIN a.librosAutor l ORDER BY a.nombre");
 		resultados = query.getResultList();
 		System.out.println("==== listado de todos los autores dados de alta con sus libros asociados====");
 		for (Object[] p : resultados) {
