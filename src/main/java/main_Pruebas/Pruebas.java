@@ -11,7 +11,6 @@ import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
 
-
 import modelo.entidad.Autor;
 import modelo.entidad.Direccion;
 import modelo.entidad.Editorial;
