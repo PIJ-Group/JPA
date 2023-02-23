@@ -3,7 +3,7 @@ package modelo.entidad.pablo;
 import javax.persistence.Embeddable;
 
 @Embeddable
-public class Direccion {
+public class Direccion { 
 
 	private String tipoVia;
 	private String nombreVia;
