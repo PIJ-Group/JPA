@@ -1,5 +1,6 @@
 package main_Pruebas;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -9,6 +10,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
 
 import modelo.entidad.Autor;
 import modelo.entidad.Direccion;
@@ -205,8 +209,45 @@ public class Pruebas {
 		for (Object[] p : resultados4) {
 			System.out.println(p[0] + " - " + (p[1] != null ? p[1] : "No se ha encontrado libreria asociada"));
 		}
+		
 		em.close();
 		emf.close();
+		
+		//Serialización XML
+		JAXBContext contexto = null;
+		try {
+			
+			contexto= JAXBContext.newInstance(Autor.class);
+			
+		} catch (JAXBException e) {
+			
+			System.out.println("Error creando el contexto");
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+			
+		}
+		
+		Marshaller m;
+		try {
+			
+			m = contexto.createMarshaller();			
+			m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+					
+			m.marshal(a1, new File("autor.xml"));
+			m.marshal(a2, new File("autor.xml"));
+			m.marshal(a3, new File("autor.xml"));
+			m.marshal(a4, new File("autor.xml"));
+			m.marshal(a5, new File("autor.xml"));
+			m.marshal(a6, new File("autor.xml"));
+			m.marshal(a7, new File("autor.xml"));
+			
+		} catch (JAXBException e) {
+			
+			System.out.println("Error convertiendo el objeto a formato XML");
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+			
+		}
 	}
 
 }

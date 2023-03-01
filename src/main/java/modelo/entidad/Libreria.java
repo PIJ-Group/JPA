@@ -10,6 +10,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+@XmlRootElement
+
 @Entity
 public class Libreria {
 	// Un libro puede estar en diferentes librerías y varias librerías pueden almacenar varios libros.
@@ -37,6 +45,7 @@ public class Libreria {
 		this.libros = libros;
 	}
 
+	@XmlAttribute(name = "id")
 	public Integer getId() {
 		return id;
 	}
@@ -69,6 +78,8 @@ public class Libreria {
 		this.direccion = direccion;
 	}
 
+	@XmlElement (name = "libro")
+	@XmlElementWrapper (name = "libros")
 	public List<Libro> getLibros() {
 		return libros;
 	}
