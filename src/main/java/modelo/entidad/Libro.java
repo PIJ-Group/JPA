@@ -12,6 +12,13 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+@XmlRootElement
 
 @Entity
 public class Libro {
@@ -51,6 +58,7 @@ public class Libro {
 	}
 
 
+	@XmlAttribute(name = "id")
 	public Integer getId() {
 		return id;
 	}
@@ -100,6 +108,8 @@ public class Libro {
 		this.autor = autor;
 	}
 	
+	@XmlElement (name = "libreria")
+	@XmlElementWrapper (name = "librerias")
 	public List<Libreria> getLibrerias() {
 		return librerias;
 	}
