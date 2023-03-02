@@ -23,7 +23,7 @@ public class TiendaDeMusica {
 	@OneToOne(mappedBy = "tienda", cascade = CascadeType.ALL)
 	private Direccion direccion;
 
-	@ManyToMany(mappedBy = "tiendas", cascade = CascadeType.PERSIST)
+	@ManyToMany(mappedBy = "tiendasDeMusica", cascade = CascadeType.PERSIST)
 	private List<Disco> discos;
 
 	public TiendaDeMusica() {
