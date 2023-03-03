@@ -16,7 +16,7 @@ public class Taller {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;	
 	private String nombre;
-	@OneToOne(mappedBy = "direccion", cascade = CascadeType.ALL)
+	@OneToOne(mappedBy = "taller", cascade = CascadeType.ALL)
 	private Direccion direccion;
 	
 	public Taller() {

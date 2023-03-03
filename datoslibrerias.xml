@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datosLibrerias>
+    <autores>
+        <autor id="7">
+            <nombre>H.P.</nombre>
+            <apellidos>Lovecraft</apellidos>
+            <fechaNacimiento>1890-08-20T00:00:00+01:00</fechaNacimiento>
+            <direccion>
+                <tipoVia>Calle</tipoVia>
+                <nombreVia>Asamblea 18</nombreVia>
+                <ciudad>Madrid</ciudad>
+            </direccion>
+        </autor>
+        <autor id="1">
+            <nombre>Stephen</nombre>
+            <apellidos>King</apellidos>
+            <fechaNacimiento>1947-09-21T00:00:00+01:00</fechaNacimiento>
+            <direccion>
+                <tipoVia>Calle</tipoVia>
+                <nombreVia>Asamblea 18</nombreVia>
+                <ciudad>Madrid</ciudad>
+            </direccion>
+        </autor>
+        <autor id="4">
+            <nombre>Anne</nombre>
+            <apellidos>Rice</apellidos>
+            <fechaNacimiento>1942-08-04T00:00:00+02:00</fechaNacimiento>
+            <direccion>
+                <tipoVia>Calle</tipoVia>
+                <nombreVia>Asamblea 18</nombreVia>
+                <ciudad>Madrid</ciudad>
+            </direccion>
+        </autor>
+        <autor id="3">
+            <nombre>Richard</nombre>
+            <apellidos>Matheson</apellidos>
+            <fechaNacimiento>1926-02-20T00:00:00Z</fechaNacimiento>
+            <direccion>
+                <tipoVia>Calle</tipoVia>
+                <nombreVia>Asamblea 18</nombreVia>
+                <ciudad>Madrid</ciudad>
+            </direccion>
+        </autor>
+        <autor id="5">
+            <nombre>Bram</nombre>
+            <apellidos>Stoker</apellidos>
+            <fechaNacimiento>1847-11-08T00:00:00+01:00</fechaNacimiento>
+            <direccion>
+                <tipoVia>Calle</tipoVia>
+                <nombreVia>Asamblea 18</nombreVia>
+                <ciudad>Madrid</ciudad>
+            </direccion>
+        </autor>
+        <autor id="6">
+            <nombre>Adam</nombre>
+            <apellidos>L.G.N</apellidos>
+            <fechaNacimiento>1969-04-19T00:00:00+01:00</fechaNacimiento>
+            <direccion>
+                <tipoVia>Calle</tipoVia>
+                <nombreVia>Asamblea 18</nombreVia>
+                <ciudad>Madrid</ciudad>
+            </direccion>
+        </autor>
+        <autor id="2">
+            <nombre>Jack</nombre>
+            <apellidos>Ketchum</apellidos>
+            <fechaNacimiento>1946-11-10T00:00:00+01:00</fechaNacimiento>
+            <direccion>
+                <tipoVia>Calle</tipoVia>
+                <nombreVia>Asamblea 18</nombreVia>
+                <ciudad>Madrid</ciudad>
+            </direccion>
+        </autor>
+    </autores>
+    <editoriales>
+        <editorial id="1">
+            <nombre>Planeta</nombre>
+            <direccion>
+                <tipoVia>Calle</tipoVia>
+                <nombreVia>Asamblea 18</nombreVia>
+                <ciudad>Madrid</ciudad>
+            </direccion>
+        </editorial>
+        <editorial id="2">
+            <nombre>Anaya</nombre>
+            <direccion>
+                <tipoVia>Calle</tipoVia>
+                <nombreVia>Asamblea 18</nombreVia>
+                <ciudad>Madrid</ciudad>
+            </direccion>
+        </editorial>
+    </editoriales>
+    <librerias>
+        <libreria id="1">
+            <nombre>Libreria Madrid</nombre>
+            <nombreDueño>Pancracio</nombreDueño>
+            <direccion>
+                <tipoVia>Calle</tipoVia>
+                <nombreVia>Asamblea 18</nombreVia>
+                <ciudad>Madrid</ciudad>
+            </direccion>
+            <libros>
+                <libro id="1">
+                    <titulo>It</titulo>
+                    <precio>5.6</precio>
+                    <autor id="1">
+                        <nombre>Stephen</nombre>
+                        <apellidos>King</apellidos>
+                        <fechaNacimiento>1947-09-21T00:00:00+01:00</fechaNacimiento>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </autor>
+                    <editorial id="1">
+                        <nombre>Planeta</nombre>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </editorial>
+                </libro>
+                <libro id="2">
+                    <titulo>La chica de al lado</titulo>
+                    <precio>11.6</precio>
+                    <autor id="2">
+                        <nombre>Jack</nombre>
+                        <apellidos>Ketchum</apellidos>
+                        <fechaNacimiento>1946-11-10T00:00:00+01:00</fechaNacimiento>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </autor>
+                    <editorial id="2">
+                        <nombre>Anaya</nombre>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </editorial>
+                </libro>
+                <libro id="5">
+                    <titulo>El resplandor</titulo>
+                    <precio>11.2</precio>
+                    <autor id="1">
+                        <nombre>Stephen</nombre>
+                        <apellidos>King</apellidos>
+                        <fechaNacimiento>1947-09-21T00:00:00+01:00</fechaNacimiento>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </autor>
+                    <editorial id="1">
+                        <nombre>Planeta</nombre>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </editorial>
+                </libro>
+                <libro id="6">
+                    <titulo>Misery</titulo>
+                    <precio>10.4</precio>
+                    <autor id="1">
+                        <nombre>Stephen</nombre>
+                        <apellidos>King</apellidos>
+                        <fechaNacimiento>1947-09-21T00:00:00+01:00</fechaNacimiento>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </autor>
+                    <editorial id="2">
+                        <nombre>Anaya</nombre>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </editorial>
+                </libro>
+            </libros>
+        </libreria>
+        <libreria id="2">
+            <nombre>Libreria Móstoles</nombre>
+            <nombreDueño>Maximiliano</nombreDueño>
+            <direccion>
+                <tipoVia>Calle</tipoVia>
+                <nombreVia>Asamblea 18</nombreVia>
+                <ciudad>Madrid</ciudad>
+            </direccion>
+            <libros>
+                <libro id="1">
+                    <titulo>It</titulo>
+                    <precio>5.6</precio>
+                    <autor id="1">
+                        <nombre>Stephen</nombre>
+                        <apellidos>King</apellidos>
+                        <fechaNacimiento>1947-09-21T00:00:00+01:00</fechaNacimiento>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </autor>
+                    <editorial id="1">
+                        <nombre>Planeta</nombre>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </editorial>
+                </libro>
+                <libro id="2">
+                    <titulo>La chica de al lado</titulo>
+                    <precio>11.6</precio>
+                    <autor id="2">
+                        <nombre>Jack</nombre>
+                        <apellidos>Ketchum</apellidos>
+                        <fechaNacimiento>1946-11-10T00:00:00+01:00</fechaNacimiento>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </autor>
+                    <editorial id="2">
+                        <nombre>Anaya</nombre>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </editorial>
+                </libro>
+                <libro id="3">
+                    <titulo>La casa infernal</titulo>
+                    <precio>8.3</precio>
+                    <autor id="3">
+                        <nombre>Richard</nombre>
+                        <apellidos>Matheson</apellidos>
+                        <fechaNacimiento>1926-02-20T00:00:00Z</fechaNacimiento>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </autor>
+                    <editorial id="2">
+                        <nombre>Anaya</nombre>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </editorial>
+                </libro>
+                <libro id="4">
+                    <titulo>Entrevista con el Vampiro</titulo>
+                    <precio>12.6</precio>
+                    <autor id="4">
+                        <nombre>Anne</nombre>
+                        <apellidos>Rice</apellidos>
+                        <fechaNacimiento>1942-08-04T00:00:00+02:00</fechaNacimiento>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </autor>
+                    <editorial id="2">
+                        <nombre>Anaya</nombre>
+                        <direccion>
+                            <tipoVia>Calle</tipoVia>
+                            <nombreVia>Asamblea 18</nombreVia>
+                            <ciudad>Madrid</ciudad>
+                        </direccion>
+                    </editorial>
+                </libro>
+            </libros>
+        </libreria>
+    </librerias>
+    <libros>
+        <libro id="1">
+            <titulo>It</titulo>
+            <precio>5.6</precio>
+            <autor id="1">
+                <nombre>Stephen</nombre>
+                <apellidos>King</apellidos>
+                <fechaNacimiento>1947-09-21T00:00:00+01:00</fechaNacimiento>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </autor>
+            <editorial id="1">
+                <nombre>Planeta</nombre>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </editorial>
+        </libro>
+        <libro id="7">
+            <titulo>Drácula</titulo>
+            <precio>9.0</precio>
+            <autor id="5">
+                <nombre>Bram</nombre>
+                <apellidos>Stoker</apellidos>
+                <fechaNacimiento>1847-11-08T00:00:00+01:00</fechaNacimiento>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </autor>
+            <editorial id="1">
+                <nombre>Planeta</nombre>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </editorial>
+        </libro>
+        <libro id="5">
+            <titulo>El resplandor</titulo>
+            <precio>11.2</precio>
+            <autor id="1">
+                <nombre>Stephen</nombre>
+                <apellidos>King</apellidos>
+                <fechaNacimiento>1947-09-21T00:00:00+01:00</fechaNacimiento>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </autor>
+            <editorial id="1">
+                <nombre>Planeta</nombre>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </editorial>
+        </libro>
+        <libro id="8">
+            <titulo>Apartamento 16</titulo>
+            <precio>14.6</precio>
+            <autor id="6">
+                <nombre>Adam</nombre>
+                <apellidos>L.G.N</apellidos>
+                <fechaNacimiento>1969-04-19T00:00:00+01:00</fechaNacimiento>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </autor>
+            <editorial id="1">
+                <nombre>Planeta</nombre>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </editorial>
+        </libro>
+        <libro id="3">
+            <titulo>La casa infernal</titulo>
+            <precio>8.3</precio>
+            <autor id="3">
+                <nombre>Richard</nombre>
+                <apellidos>Matheson</apellidos>
+                <fechaNacimiento>1926-02-20T00:00:00Z</fechaNacimiento>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </autor>
+            <editorial id="2">
+                <nombre>Anaya</nombre>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </editorial>
+        </libro>
+        <libro id="4">
+            <titulo>Entrevista con el Vampiro</titulo>
+            <precio>12.6</precio>
+            <autor id="4">
+                <nombre>Anne</nombre>
+                <apellidos>Rice</apellidos>
+                <fechaNacimiento>1942-08-04T00:00:00+02:00</fechaNacimiento>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </autor>
+            <editorial id="2">
+                <nombre>Anaya</nombre>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </editorial>
+        </libro>
+        <libro id="2">
+            <titulo>La chica de al lado</titulo>
+            <precio>11.6</precio>
+            <autor id="2">
+                <nombre>Jack</nombre>
+                <apellidos>Ketchum</apellidos>
+                <fechaNacimiento>1946-11-10T00:00:00+01:00</fechaNacimiento>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </autor>
+            <editorial id="2">
+                <nombre>Anaya</nombre>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </editorial>
+        </libro>
+        <libro id="6">
+            <titulo>Misery</titulo>
+            <precio>10.4</precio>
+            <autor id="1">
+                <nombre>Stephen</nombre>
+                <apellidos>King</apellidos>
+                <fechaNacimiento>1947-09-21T00:00:00+01:00</fechaNacimiento>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </autor>
+            <editorial id="2">
+                <nombre>Anaya</nombre>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </editorial>
+        </libro>
+        <libro id="9">
+            <titulo>La llamada de Cthulhu</titulo>
+            <precio>19.99</precio>
+            <autor id="7">
+                <nombre>H.P.</nombre>
+                <apellidos>Lovecraft</apellidos>
+                <fechaNacimiento>1890-08-20T00:00:00+01:00</fechaNacimiento>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </autor>
+            <editorial id="2">
+                <nombre>Anaya</nombre>
+                <direccion>
+                    <tipoVia>Calle</tipoVia>
+                    <nombreVia>Asamblea 18</nombreVia>
+                    <ciudad>Madrid</ciudad>
+                </direccion>
+            </editorial>
+        </libro>
+    </libros>
+</datosLibrerias>

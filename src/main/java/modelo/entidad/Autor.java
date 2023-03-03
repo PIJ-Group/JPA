@@ -15,12 +15,12 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 
 @XmlRootElement
+@XmlType(propOrder = {"id", "nombre", "apellidos", "fechaNacimiento", "direccion", "librosAutor"})
 
 @Entity
 @Table(name = "autores")
@@ -91,10 +91,8 @@ public class Autor {
 
 	public void setDireccion(Direccion direccion) {
 		this.direccion = direccion;
-	}
+	}	
 	
-	@XmlElement (name = "libro")
-	@XmlElementWrapper (name = "librosAutor")
 	public List<Libro> getLibrosAutor() {
 		return librosAutor;
 	}

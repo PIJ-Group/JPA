@@ -14,9 +14,11 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 
 @XmlRootElement
+@XmlType(propOrder = {"id", "nombre", "nombreDueño", "direccion", "libros"})
 
 @Entity
 public class Libreria {
@@ -79,7 +81,7 @@ public class Libreria {
 	}
 
 	@XmlElement (name = "libro")
-	@XmlElementWrapper (name = "libros")
+	@XmlElementWrapper (name = "libros")	
 	public List<Libro> getLibros() {
 		return libros;
 	}

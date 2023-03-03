@@ -20,8 +20,8 @@ public class TiendaDeMusica {
 	private Integer id;
 	private String nombre;
 
-	@OneToOne(mappedBy = "tienda", cascade = CascadeType.ALL)
-	private Direccion direccion;
+	@OneToOne(mappedBy = "tiendaDeMusica", cascade = CascadeType.ALL)
+	private Domicilio direccion;
 
 	@ManyToMany(mappedBy = "tiendasDeMusica", cascade = CascadeType.PERSIST)
 	private List<Disco> discos;
@@ -30,7 +30,7 @@ public class TiendaDeMusica {
 		super();
 	}
 
-	public TiendaDeMusica(Integer id, String nombre, Direccion direccion, List<Disco> discos) {
+	public TiendaDeMusica(Integer id, String nombre, Domicilio direccion, List<Disco> discos) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
@@ -54,11 +54,11 @@ public class TiendaDeMusica {
 		this.nombre = nombre;
 	}
 
-	public Direccion getDireccion() {
+	public Domicilio getDireccion() {
 		return direccion;
 	}
 
-	public void setDireccion(Direccion direccion) {
+	public void setDireccion(Domicilio direccion) {
 		this.direccion = direccion;
 	}
 
