@@ -168,55 +168,57 @@ public class Pruebas {
 		em.close();
 
 
-		System.out.println("==============================================");
+		System.out.println("==============================================\n");
 		em = emf.createEntityManager();
 
 		Query query = em.createQuery(
 				"SELECT lib.titulo, lib.editorial.nombre, lib.autor.nombre, lib.autor.apellidos " + "FROM Libro lib");
 		List<Object[]> resultados = query.getResultList();
-		System.out.println("==== listado de libros dados de alta, con su editorial y su autor====");
+		System.out.println("\n==== listado de libros dados de alta, con su editorial y su autor====");
 		for (Object[] p : resultados) {
 			System.out.println(p[0] + " - " + p[1] + " - " + p[2] + " " + p[3]);// la posicion 0 tiene el titulo y la 1
 																				// la editorial y la 2 el autor
 		}
-		System.out.println("==============================================");
+		System.out.println("==============================================\n");
 
 		query = em.createQuery("SELECT a.nombre, a.apellidos, l.titulo FROM Autor a JOIN a.librosAutor l ORDER BY a.nombre");
 		resultados = query.getResultList();
-		System.out.println("==== listado de todos los autores dados de alta con sus libros asociados====");
+		System.out.println("\n==== listado de todos los autores dados de alta con sus libros asociados====");
 		for (Object[] p : resultados) {
 			System.out.println(p[0] + "  " + p[1] + " - " + p[2]);
 		}
 
-		System.out.println("==============================================");
+		System.out.println("==============================================\n");
 
 		TypedQuery<Object[]> query1 = em.createQuery("SELECT lb.nombre, l.titulo " + "FROM Libro l "
 				+ " JOIN l.librerias lb " + "ORDER BY lb.nombre, l.titulo", Object[].class);
 
 		List<Object[]> resultados3 = query1.getResultList();
 
-		System.out.println("==== listado de librerias con sus libros asociados====");
+		System.out.println("\n==== listado de librerias con sus libros asociados====");
 		for (Object[] p : resultados3) {
 			System.out.println("Libreria: " + p[0] + " - Libro: " + p[1]);
 		}
 
-		System.out.println("==============================================");
+		System.out.println("==============================================\n");
 
 		TypedQuery<Object[]> query4 = em.createQuery("SELECT l.titulo, lb.nombre FROM Libro l "
 				+ "LEFT JOIN l.librerias lb " + "ORDER BY l.titulo, lb.nombre", Object[].class);
 		List<Object[]> resultados4 = query4.getResultList();
 		System.out.println(
-				"================ Listado de todos los libros dados de alta y sus correspondientes librerias ================");
+				"\n================ Listado de todos los libros dados de alta y sus correspondientes librerias ================");
 		for (Object[] p : resultados4) {
 			System.out.println(p[0] + " - " + (p[1] != null ? p[1] : "No se ha encontrado libreria asociada"));
 		}
-		
+		System.out.println("\n");
 		em.close();
 		emf.close();
 		
+		System.out.println("==============================================\n");
+		
 		//Serialización XML
 		
-		System.out.println("\n==================================== Serialización ====================================");
+		System.out.println("==================================== Serialización ====================================");
 		System.out.println("\nRealizando la serialización");
 		
 		JAXBContext contexto = null;
