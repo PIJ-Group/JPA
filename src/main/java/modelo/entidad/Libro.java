@@ -13,12 +13,13 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.XmlType;
 
 
 @XmlRootElement
+@XmlType(propOrder = {"id", "titulo", "precio", "autor", "editorial"})
 
 @Entity
 public class Libro {
@@ -33,7 +34,7 @@ public class Libro {
 	private Editorial editorial;
 	
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "FK_AUTOR", referencedColumnName = "id")
+    @JoinColumn(name = "FK_AUTOR", referencedColumnName = "id")    
 	private Autor autor;
 	
 	@ManyToMany(cascade=CascadeType.PERSIST)
@@ -108,8 +109,9 @@ public class Libro {
 		this.autor = autor;
 	}
 	
-	@XmlElement (name = "libreria")
-	@XmlElementWrapper (name = "librerias")
+	//@XmlElement (name = "libreria")
+	//@XmlElementWrapper (name = "librerias")
+	@XmlTransient
 	public List<Libreria> getLibrerias() {
 		return librerias;
 	}

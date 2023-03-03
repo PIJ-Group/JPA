@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "direcciones")
-public class Direccion {
+public class Domicilio {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,11 +22,11 @@ public class Direccion {
 	@JoinColumn(name = "fk_id_tienda", referencedColumnName = "id")
 	private TiendaDeMusica tiendaDeMusica;
 
-	public Direccion() {
+	public Domicilio() {
 		super();
 	}
 
-	public Direccion(Integer id, String calle, Integer numero, Integer codigoPostal, TiendaDeMusica tiendaDeMusica) {
+	public Domicilio(Integer id, String calle, Integer numero, Integer codigoPostal, TiendaDeMusica tiendaDeMusica) {
 		super();
 		this.id = id;
 		this.calle = calle;

@@ -2,9 +2,11 @@ package modelo.entidad;
 
 import javax.persistence.Embeddable;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 
 @XmlRootElement
+@XmlType(propOrder = {"tipoVia", "nombreVia", "ciudad"})
 
 @Embeddable
 public class Direccion {

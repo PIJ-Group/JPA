@@ -15,6 +15,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
 import modelo.entidad.Autor;
+import modelo.entidad.DatosLibrerias;
 import modelo.entidad.Direccion;
 import modelo.entidad.Editorial;
 import modelo.entidad.Libreria;
@@ -214,10 +215,14 @@ public class Pruebas {
 		emf.close();
 		
 		//Serialización XML
+		
+		System.out.println("\n==================================== Serialización ====================================");
+		System.out.println("\nRealizando la serialización");
+		
 		JAXBContext contexto = null;
 		try {
 			
-			contexto= JAXBContext.newInstance(Autor.class);
+			contexto= JAXBContext.newInstance(DatosLibrerias.class);
 			
 		} catch (JAXBException e) {
 			
@@ -232,15 +237,37 @@ public class Pruebas {
 			
 			m = contexto.createMarshaller();			
 			m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-					
-			m.marshal(a1, new File("autor.xml"));
-			m.marshal(a2, new File("autor.xml"));
-			m.marshal(a3, new File("autor.xml"));
-			m.marshal(a4, new File("autor.xml"));
-			m.marshal(a5, new File("autor.xml"));
-			m.marshal(a6, new File("autor.xml"));
-			m.marshal(a7, new File("autor.xml"));
 			
+			DatosLibrerias datoslibrerias = new DatosLibrerias();
+			
+			datoslibrerias.getAutores().add(a1);
+			datoslibrerias.getAutores().add(a2);
+			datoslibrerias.getAutores().add(a3);
+			datoslibrerias.getAutores().add(a4);
+			datoslibrerias.getAutores().add(a5);
+			datoslibrerias.getAutores().add(a6);
+			datoslibrerias.getAutores().add(a7);			
+			
+			datoslibrerias.getEditoriales().add(e1);
+			datoslibrerias.getEditoriales().add(e2);
+			
+			datoslibrerias.getLibrerias().add(libreria1);
+			datoslibrerias.getLibrerias().add(libreria2);
+			
+			datoslibrerias.getLibros().add(lib1);
+			datoslibrerias.getLibros().add(lib2);
+			datoslibrerias.getLibros().add(lib3);
+			datoslibrerias.getLibros().add(lib4);
+			datoslibrerias.getLibros().add(lib5);
+			datoslibrerias.getLibros().add(lib6);
+			datoslibrerias.getLibros().add(lib7);
+			datoslibrerias.getLibros().add(lib8);
+			datoslibrerias.getLibros().add(lib9);
+			
+			m.marshal(datoslibrerias, new File("datoslibrerias.xml"));
+			
+			System.out.println("El archivo con los datos de las librerias ha sido creado");			
+						
 		} catch (JAXBException e) {
 			
 			System.out.println("Error convertiendo el objeto a formato XML");

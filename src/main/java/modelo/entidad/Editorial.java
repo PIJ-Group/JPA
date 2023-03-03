@@ -11,11 +11,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement
+@XmlType(propOrder = {"id", "nombre", "direccion"})
 
 @Entity
 public class Editorial {
@@ -66,8 +67,9 @@ public class Editorial {
 		this.direccion = direccion;
 	}
 
-	@XmlElement (name = "libro")
-	@XmlElementWrapper (name = "librosEditorial")
+	//@XmlElement (name = "libro")
+	//@XmlElementWrapper (name = "librosEditorial")
+	@XmlTransient
 	public List<Libro> getLibrosEditorial() {
 		return librosEditorial;
 	}
